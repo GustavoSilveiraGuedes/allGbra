@@ -231,7 +231,7 @@ h1, h2, h3 {
                 section#math .subject-card.active .content {
                     border-color: var(--subject-color);
                     border-radius: 0 0 5px 5px;
-                    box-shadow: 0px 0px 20px 10px var(--subject-color);
+                    box-shadow: 0px 0px 20px -10px var(--subject-color);
                     opacity: 1;
                     padding: 20px 10px;
                 }
