@@ -186,7 +186,7 @@ h1, h2, h3 {
                     align-items: center;
                     border: 1px solid var(--subject-color);
                     border-radius: 5px;
-                    box-shadow: 0px 0px 20px -10px var(--subject-color);
+                    box-shadow: 0px 0px 10px -5px var(--subject-color);
                     color: var(--subject-color);
                     cursor: pointer;
                     display: flex;
@@ -231,7 +231,7 @@ h1, h2, h3 {
                 section#math .subject-card.active .content {
                     border-color: var(--subject-color);
                     border-radius: 0 0 5px 5px;
-                    box-shadow: 0px 0px 20px -10px var(--subject-color);
+                    box-shadow: 0px 0px 10px -5px var(--subject-color);
                     opacity: 1;
                     padding: 20px 10px;
                 }
@@ -283,11 +283,14 @@ h1, h2, h3 {
                                 transition: 0.3s;
                             }
 
-                            section#math .subject-card .content .card-grid .card a::after {
-                                content: "";
-                                width: 15px;
-                                height: 15px;
-                                background-color: var(--color5);
-                                mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
-                            }
+                                section#math .subject-card .content .card-grid .card a::after {
+                                    content: "";
+                                    width: 15px;
+                                    height: 15px;
+                                    background-color: var(--color5);
+                                    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>') no-repeat center;
+                                    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>') no-repeat center;
+                                    -webkit-mask-size: contain;
+                                    mask-size: contain;
+                                }
 }
