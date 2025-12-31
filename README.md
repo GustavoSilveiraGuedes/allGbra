@@ -1,2 +1,2 @@
-# alGbra
-<a href="alGbra/html/home/index.html">allGbra</a>
+# allGbra
+<a href="allGbra/html/home/index.html">allGbra</a>
