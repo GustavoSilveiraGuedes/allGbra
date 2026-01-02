@@ -1,24 +1,32 @@
 {
+  "homeA": "Home",
+  "mathA": "Math",
+  "physA": "Phys",
   "algbraP": "Unveil the patterns that govern the universe. Navigate through interactive modules of geometry, algebra, and mechanics, transforming complex formulas into practical and visual knowledge.",
   "challengeH2": "Challenge yourself",
   "challengeP": "Discover the daily algebraic formula.",
   "mathH1": "Math",
   "mathH2": "Discover about",
   "mathP": "Equations, areas, volumes, angles, and more.",
-  "functionH2": "Functions",
-  "planeGeometriH2": "Plane Geometry",
+
+  "functionsH2": "Functions",
+  "planeGeometryH2": "Plane Geometry",
   "generalPropertiesH2": "General Properties",
   "shapesH2": "Shapes",
+
   "aboutA": "About",
+
   "firstDegreeFunctionH3": "First Degree<br>Function",
   "secondDegreeFunctionH3": "Second Degree<br>Function",
   "thirdDegreeFunctionH3": "Third Degree<br>Function",
   "exponentialFunctionH3": "Exponential<br>Function",
   "logarithmicFunctionH3": "Logarithmic<br>Function",
   "absoluteValueFunctionH3": "Absolute Value<br>Function",
+
   "internalAnglesH3": "Internal<br>Angles Sum",
   "exteriorAnglesH3": "Exterior<br>Angles Sum",
   "diagonalsNumberH3": "Number of<br>Diagonals",
+
   "squareH3": "Square",
   "rectangleH3": "Rectangle",
   "trapezeH3": "Trapeze",
@@ -26,5 +34,11 @@
   "triangleH3": "Triangle",
   "pentagonH3": "Pentagon",
   "hexagonH3": "Hexagon",
-  "circleH3": "Circle"
+  "circleH3": "Circle",
+
+  "anglesH2": "Angles",
+
+  "angleConversionH3": "Angle<br>Conversion",
+  "degreesH3": "Degrees",
+  "radianH3": "Radian"
 }

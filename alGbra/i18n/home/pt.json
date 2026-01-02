@@ -1,24 +1,32 @@
 {
+  "homeA": "Inicio",
+  "mathA": "Mat",
+  "physA": "Fís",
   "algbraP": "Desvende os padrões que governam o universo. Navegue por módulos interativos de geometria, álgebra e mecânica, transformando fórmulas complexas em conhecimento prático e visual.",
   "challengeH2": "Desafie-se",
   "challengeP": "Descubra a fórmula algébrica do dia.",
   "mathH1": "Matemática",
   "mathH2": "Descubra sobre",
   "mathP": "Equações, áreas, volumes, ângulos e muito mais.",
-  "functionH2": "Funções",
-  "planeGeometriH2": "Geometria Plana",
+
+  "functionsH2": "Funções",
+  "planeGeometryH2": "Geometria Plana",
   "generalPropertiesH2": "Propriedades Gerais",
   "shapesH2": "Formas",
+
   "aboutA": "Sobre",
+
   "firstDegreeFunctionH3": "Função de<br>Primeiro Grau",
   "secondDegreeFunctionH3": "Função de<br>Segundo Grau",
   "thirdDegreeFunctionH3": "Função de<br>Terceiro Grau",
   "exponentialFunctionH3": "Função<br>Exponencial",
   "logarithmicFunctionH3": "Função<br>Logarítmica",
   "absoluteValueFunctionH3": "Função<br>Modular",
+
   "internalAnglesH3": "Soma dos<br>Ângulos Internos",
   "exteriorAnglesH3": "Soma dos<br>Ângulos Externos",
   "diagonalsNumberH3": "Número de<br>Diagonais",
+
   "squareH3": "Quadrado",
   "rectangleH3": "Retângulo",
   "trapezeH3": "Trapézio",
@@ -26,5 +34,11 @@
   "triangleH3": "Triângulo",
   "pentagonH3": "Pentágono",
   "hexagonH3": "Hexágono",
-  "circleH3": "Círculo"
+  "circleH3": "Círculo",
+
+  "anglesH2": "Ângulos",
+
+  "angleConversionH3": "Conversão<br>de Ângulos",
+  "degreesH3": "Graus",
+  "radianH3": "Radiano"
 }

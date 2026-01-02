@@ -13,16 +13,16 @@
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#math">Math</a>
+            <a href="#" data-i18n="homeA">Home</a>
+            <a href="#math" data-i18n="mathA">Math</a>
             <a href="html/account/login.html">
                 <svg class="bi bi-person-circle" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                     <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" fill-rule="evenodd" />
                 </svg>
             </a>
-            <a href="#physics">Phys</a>
-            <a href="html/browse/about.html">About</a>
+            <a href="#physics" data-i18n="physA">Phys</a>
+            <a href="html/browse/about.html" data-i18n="aboutA">About</a>
         </nav>
     </header>
 
@@ -60,7 +60,7 @@
 
             <div class="subject-card" style="--subject-color: lightgreen;">
                 <div class="set hiddenScroll" data-animation="intro1">
-                    <h2 data-i18n="functionH2">Functions</h2>
+                    <h2 data-i18n="functionsH2">Functions</h2>
                     <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                     </svg>
@@ -125,112 +125,161 @@
 
             <div class="subject-card" style="--subject-color: yellow;">
                 <div class="set hiddenScroll" data-animation="intro1">
-                    <h2 data-i18n="planeGeometriH2">Plane Geometry</h2>
+                    <h2 data-i18n="planeGeometryH2">Plane Geometry</h2>
                     <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                     </svg>
                 </div>
 
-                <div class="content">
-                    <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties</h2>
+                    <div class="content">
+                        <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties</h2>
 
-                    <div class="card-grid">
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/generalProperties/internalAnglesSum.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="internalAnglesH3">Internal<br>Angles Sum</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
+                        <div class="card-grid">
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/generalProperties/internalAnglesSum.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="internalAnglesH3">Internal<br>Angles Sum</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/generalProperties/exteriorAnglesSum.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="exteriorAnglesH3">Exterior<br>Angles Sum</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                 </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/generalProperties/numberOfDiagonals.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="diagonalsNumberH3">Number of<br>Diagonals</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/generalProperties/exteriorAnglesSum.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="exteriorAnglesH3">Exterior<br>Angles Sum</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
+                        <h2 class="hiddenScroll" data-i18n="shapesH2" data-animation="intro1">Shapes</h2>
+
+                        <div class="card-grid">
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/circle/circle.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="circleH3">Circle</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
                             </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/triangle/triangle.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="triangleH3">Triangle</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/square/square.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="squareH3">Square</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/rectangle/rectangle.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="rectangleH3">Rectangle</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/trapeze/trapeze.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="trapezeH3">Trapeze</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/rhombus/rhombus.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="rhombusH3">Rhombus</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/pentagon/pentagon.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="pentagonH3">Pentagon</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/planeGeometri/hexagon/hexagon.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="hexagonH3">Hexagon</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/generalProperties/numberOfDiagonals.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="diagonalsNumberH3">Number of<br>Diagonals</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
                     </div>
+            </div>
 
-                    <h2 class="hiddenScroll" data-i18n="shapesH2" data-animation="intro1">Shapes</h2>
-
-                    <div class="card-grid">
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/square/square.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="squareH3">Square</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/rectangle/rectangle.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="rectangleH3">Rectangle</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/trapeze/trapeze.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="trapezeH3">Trapeze</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/rhombus/rhombus.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="rhombusH3">Rhombus</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/triangle/triangle.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="triangleH3">Triangle</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/pentagon/pentagon.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="pentagonH3">Pentagon</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/hexagon/hexagon.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="hexagonH3">Hexagon</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                        <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="img/planeGeometri/circle/circle.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h3 data-i18n="circleH3">Circle</h3>
-                                <a href="#" data-i18n="aboutA">About</a>
-                            </div>
-                        </div>
-
-                    </div>
-
+            <div class="subject-card" style="--subject-color: red;">
+                <div class="set hiddenScroll" data-animation="intro1">
+                    <h2 data-i18n="anglesH2">Angles</h2>
+                    <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
                 </div>
+
+                    <div class="content">
+                        <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties</h2>
+
+                        <div class="card-grid">
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/angles/generalProperties/angleConversion.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="angleConversionH3">Angle<br>Conversion</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="hiddenScroll" data-i18n="anglesH2" data-animation="intro1">Angles</h2>
+
+
+                        <div class="card-grid">
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/angles/degrees/degrees.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="degreesH3">Degrees</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                            <div class="card hiddenScroll" data-animation="intro2">
+                                <img src="img/angles/radian/radian.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 data-i18n="radianH3">Radian</h3>
+                                    <a href="#" data-i18n="aboutA">About</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
             </div>
         </section>
     </main>
