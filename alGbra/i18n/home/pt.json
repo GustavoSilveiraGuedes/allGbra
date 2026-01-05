@@ -38,12 +38,12 @@
   "pentagonH3": "Pentágono",
   "hexagonH3": "Hexágono",
 
-  "tirgonometryH2": "Trigonometria",
+  "trigonometryH2": "Trigonometria",
   "unitCircleH3": "Círculo<br>Trigonométrico",
   "trigonometricRatiosH2": "Razões Trigonométricas",
 
   "sineH3": "Seno",
-  "cossineH3": "Cosseno",
+  "cosineH3": "Cosseno",
   "tangentH3": "Tangente",
   "cossecantH3": "Cossecante",
   "secantH3": "Secante",
@@ -51,5 +51,9 @@
 
   "financialMathematicsH2": "Matemática Financeira",
   "simpleInterestH3": "Juros<br>Simples",
-  "compoundInterestH3": "Juros<br>Compostos"
+  "compoundInterestH3": "Juros<br>Compostos",
+
+  "sequencesH2": "Progressões",
+  "arithmeticSequenceH3": "Progressão<br>Aritmética",
+  "geometricSequenceH3": "Progressão<br>Geométrica"
 }

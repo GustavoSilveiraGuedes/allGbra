@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="shortcut icon" href="img/visual/icon.png" type="image/x-icon">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="img/visual/icon.png" rel="shortcut icon" type="image/x-icon">
     <title>alGbra</title>
 </head>
 
@@ -19,7 +19,9 @@
                 <svg class="bi bi-person-circle" fill="currentColor" viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" fill-rule="evenodd" />
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                        fill-rule="evenodd" />
                 </svg>
             </a>
             <a href="#physics" data-i18n="physA">Phys</a>
@@ -32,23 +34,30 @@
             <div class="language-container hiddenScroll" data-animation="intro1">
                 <button id="language-toggle" class="lang-button">EN-US</button>
             </div>
-            <a href="#" id="linkalGbra" class="hiddenScroll" data-animation="intro1">
+
+            <a id="linkalGbra" class="hiddenScroll" href="#" data-animation="intro1">
                 <svg class="bi bi-amd" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0zM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2z" />
                 </svg>
                 www.alGbra.com
             </a>
+
             <h1 class="hiddenScroll" data-animation="typing">.alGbra</h1>
-            <p class="hiddenScroll" data-i18n="algbraP" data-animation="intro1">
-                Unveil the patterns that govern the universe. Navigate through interactive modules of geometry, algebra, and mechanics, transforming complex formulas into practical and visual knowledge.
-            </p>
+
+            <p class="hiddenScroll" data-i18n="algbraP" data-animation="intro1">Unveil the patterns that govern the
+                universe. Navigate through interactive modules of geometry, algebra, and mechanics transforming complex
+                formulas into practical and visual knowledge.</p>
 
             <div>
                 <h2 class="hiddenScroll" data-i18n="challengeH2" data-animation="intro2">Challenge yourself</h2>
-                <p class="hiddenScroll" data-i18n="challengeP" data-animation="intro1">Discover the daily algebraic formula.</p>
-                <a class="hiddenScroll" data-animation="intro1" href="html/browse/challenge.html">
-                    <svg class="bi bi-graph-up-arrow" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" fill-rule="evenodd" />
+                <p class="hiddenScroll" data-i18n="challengeP" data-animation="intro1">Discover the daily algebraic
+                    formula.</p>
+                <a class="hiddenScroll" href="html/browse/challenge.html" data-animation="intro1">
+                    <svg class="bi bi-graph-up-arrow" fill="currentColor" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                            fill-rule="evenodd" />
                     </svg>
                 </a>
             </div>
@@ -57,7 +66,8 @@
         <section id="math">
             <h1 class="hiddenScroll" data-i18n="mathH1" data-animation="intro2">Math</h1>
             <h2 class="hiddenScroll" data-i18n="mathH2" data-animation="intro1">Discover about</h2>
-            <p class="hiddenScroll" data-i18n="mathP" data-animation="intro1">Equations, areas, volumes, angles, and more.</p>
+            <p class="hiddenScroll" data-i18n="mathP" data-animation="intro1">Equations, areas, volumes, angles, and
+                more.</p>
 
             <div class="subject-card" style="--subject-color: lightgreen;">
                 <div class="set hiddenScroll" data-animation="intro1">
@@ -126,16 +136,53 @@
 
             </div>
 
-            <div class="subject-card" style="--subject-color: yellow;">
+            <div class="subject-card" style="--subject-color: lightpink;">
                 <div class="set hiddenScroll" data-animation="intro1">
-                    <h2 data-i18n="planeGeometryH2">Plane Geometry</h2>
-                    <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    <h2 data-i18n="sequencesH2">Sequences</h2>
+                    <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                     </svg>
                 </div>
 
                 <div class="content">
-                    <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties</h2>
+                    <div class="card-grid">
+
+                        <div class="card hiddenScroll" data-animation="intro2">
+                            <img src="img/sequences/arithmeticSequence/arithmeticSequence.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h3 data-i18n="arithmeticSequenceH3">Arithmetic<br>Sequence</h3>
+                                <a href="#" data-i18n="aboutA">About</a>
+                            </div>
+                        </div>
+
+                        <div class="card hiddenScroll" data-animation="intro2">
+                            <img src="img/sequences/geometricSequence/geometricSequence.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h3 data-i18n="geometricSequenceH3">Geometric<br>Sequence</h3>
+                                <a href="#" data-i18n="aboutA">About</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="subject-card" style="--subject-color: yellow;">
+                <div class="set hiddenScroll" data-animation="intro1">
+                    <h2 data-i18n="planeGeometryH2">Plane Geometry</h2>
+                    <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </div>
+
+                <div class="content">
+                    <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties
+                    </h2>
 
                     <div class="card-grid">
                         <div class="card hiddenScroll" data-animation="intro2">
@@ -238,7 +285,7 @@
 
             <div class="subject-card" style="--subject-color: orange;">
                 <div class="set hiddenScroll" data-animation="intro1">
-                    <h2 data-i18n="tirgonometryH2">Trigonometry</h2>
+                    <h2 data-i18n="trigonometryH2">Trigonometry</h2>
                     <svg class="bi bi-caret-right-fill" fill="currentColor" viewBox="0 0 16 16"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -247,7 +294,8 @@
                 </div>
 
                 <div class="content">
-                    <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties</h2>
+                    <h2 class="hiddenScroll" data-i18n="generalPropertiesH2" data-animation="intro1">General Properties
+                    </h2>
 
                     <div class="card-grid">
 
@@ -261,7 +309,8 @@
 
                     </div>
 
-                    <h2 class="hiddenScroll" data-i18n="trigonometricRatiosH2" data-animation="intro1">Trigonometric Ratios</h2>
+                    <h2 class="hiddenScroll" data-i18n="trigonometricRatiosH2" data-animation="intro1">Trigonometric
+                        Ratios</h2>
 
                     <div class="card-grid">
 
@@ -276,7 +325,7 @@
                         <div class="card hiddenScroll" data-animation="intro2">
                             <img src="img/trigonometry/cossine/cossine.jpg" class="card-img-top">
                             <div class="card-body">
-                                <h3 data-i18n="cossineH3">Cossine</h3>
+                                <h3 data-i18n="cosineH3">Cosine</h3>
                                 <a href="#" data-i18n="aboutA">About</a>
                             </div>
                         </div>
@@ -333,7 +382,7 @@
                     <div class="card-grid">
 
                         <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="" class="card-img-top">
+                            <img src="img/financialMathematics/simpleInterest/simpleInterest.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h3 data-i18n="simpleInterestH3">Simple<br>Interest</h3>
                                 <a href="#" data-i18n="aboutA">About</a>
@@ -341,7 +390,8 @@
                         </div>
 
                         <div class="card hiddenScroll" data-animation="intro2">
-                            <img src="" class="card-img-top">
+                            <img src="img/financialMathematics/compoundInterest/compoundInterest.jpg"
+                                class="card-img-top">
                             <div class="card-body">
                                 <h3 data-i18n="compoundInterestH3">Compound<br>Interest</h3>
                                 <a href="#" data-i18n="aboutA">About</a>
