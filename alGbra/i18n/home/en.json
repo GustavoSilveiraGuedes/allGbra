@@ -4,14 +4,14 @@
   "physA": "Phys",
   "aboutA": "About",
 
-  "algbraP": "Unveil the patterns that govern the universe. Navigate through interactive modules of geometry, algebra, and mechanics, transforming complex formulas into practical and visual knowledge.",
+  "algbraP": "Discover the patterns that rule the universe. Navigate through interactive modules of geometry, algebra, and mechanics, transforming complex formulas into practical and visual knowledge.",
 
   "challengeH2": "Challenge Yourself",
   "challengeP": "Discover the daily algebraic formula.",
 
   "mathH1": "Math",
   "mathH2": "Discover About",
-  "mathP": "Equations, areas, volumes, angles, and more.",
+  "mathP": "Equations, areas, volumes, polygons and more.",
 
   "functionsH2": "Functions",
   "firstDegreeFunctionH3": "First Degree<br>Function",
@@ -21,11 +21,15 @@
   "logarithmicFunctionH3": "Logarithmic<br>Function",
   "absoluteValueFunctionH3": "Absolute Value<br>Function",
 
+  "sequencesH2": "Sequences",
+  "arithmeticSequenceH3": "Arithmetic<br>Sequence",
+  "geometricSequenceH3": "Geometric<br>Sequence",
+
   "planeGeometryH2": "Plane Geometry",
   "generalPropertiesH2": "General Properties",
 
-  "internalAnglesH3": "Internal<br>Angles Sum",
-  "exteriorAnglesH3": "Exterior<br>Angles Sum",
+  "internalAnglesSumH3": "Internal<br>Angles Sum",
+  "exteriorAnglesSumH3": "Exterior<br>Angles Sum",
   "diagonalsNumberH3": "Number of<br>Diagonals",
 
   "shapesH2": "Shapes",
@@ -37,6 +41,13 @@
   "rhombusH3": "Rhombus",
   "pentagonH3": "Pentagon",
   "hexagonH3": "Hexagon",
+
+  "solidGeometryH2": "Solid Geometry",
+  "prismH3": "Prism",
+  "pyramidH3": "Pyramid",
+  "cylinderH3": "Cylinder",
+  "coneH3": "Cone",
+  "sphereH3": "Sphere",
 
   "trigonometryH2": "Trigonometry",
   "unitCircleH3": "Unit Circle",
@@ -51,9 +62,5 @@
 
   "financialMathematicsH2": "Financial Mathematics",
   "simpleInterestH3": "Simple<br>Interest",
-  "compoundInterestH3": "Compound<br>Interest",
-
-  "sequencesH2": "Sequences",
-  "arithmeticSequenceH3": "Arithmetic<br>Sequence",
-  "geometricSequenceH3": "Geometric<br>Sequence"
+  "compoundInterestH3": "Compound<br>Interest"
 }

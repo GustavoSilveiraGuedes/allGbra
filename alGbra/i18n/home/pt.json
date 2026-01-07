@@ -4,14 +4,15 @@
   "physA": "Fís",
   "aboutA": "Sobre",
 
-  "algbraP": "Revele os padrões que governam o universo. Navegue por módulos interativos de geometria, álgebra e mecânica, transformando fórmulas complexas em conhecimento prático e visual.",
+  "algbraP": "Descubra os padrões que regem o universo. Navegue por módulos interativos de geometria, álgebra e mecânica, transformando fórmulas complexas em conhecimento prático e visual.",
+
 
   "challengeH2": "Desafie-se",
   "challengeP": "Descubra a fórmula algébrica do dia.",
 
   "mathH1": "Matemática",
   "mathH2": "Descubra sobre",
-  "mathP": "Equações, áreas, volumes, ângulos e muito mais.",
+  "mathP": "Equações, áreas, volumes, polígonos e muito mais.",
 
   "functionsH2": "Funções",
   "firstDegreeFunctionH3": "Função do<br>Primeiro Grau",
@@ -19,13 +20,17 @@
   "thirdDegreeFunctionH3": "Função do<br>Terceiro Grau",
   "exponentialFunctionH3": "Função<br>Exponencial",
   "logarithmicFunctionH3": "Função<br>Logarítmica",
-  "absoluteValueFunctionH3": "Função<br>Módulo",
+  "absoluteValueFunctionH3": "Função<br>Modular",
+
+  "sequencesH2": "Progressões",
+  "arithmeticSequenceH3": "Progressão<br>Aritmética",
+  "geometricSequenceH3": "Progressão<br>Geométrica",
 
   "planeGeometryH2": "Geometria Plana",
   "generalPropertiesH2": "Propriedades Gerais",
 
-  "internalAnglesH3": "Soma dos<br>Ângulos Internos",
-  "exteriorAnglesH3": "Soma dos<br>Ângulos Externos",
+  "internalAnglesSumH3": "Soma dos<br>Ângulos Internos",
+  "exteriorAnglesSumH3": "Soma dos<br>Ângulos Externos",
   "diagonalsNumberH3": "Número de<br>Diagonais",
 
   "shapesH2": "Figuras",
@@ -37,6 +42,13 @@
   "rhombusH3": "Losango",
   "pentagonH3": "Pentágono",
   "hexagonH3": "Hexágono",
+
+  "solidGeometryH2": "Geometria Espacial",
+  "prismH3": "Prisma",
+  "pyramidH3": "Pirâmide",
+  "cylinderH3": "Cilindro",
+  "coneH3": "Cone",
+  "sphereH3": "Esfera",
 
   "trigonometryH2": "Trigonometria",
   "unitCircleH3": "Círculo<br>Trigonométrico",
@@ -51,9 +63,5 @@
 
   "financialMathematicsH2": "Matemática Financeira",
   "simpleInterestH3": "Juros<br>Simples",
-  "compoundInterestH3": "Juros<br>Compostos",
-
-  "sequencesH2": "Progressões",
-  "arithmeticSequenceH3": "Progressão<br>Aritmética",
-  "geometricSequenceH3": "Progressão<br>Geométrica"
+  "compoundInterestH3": "Juros<br>Compostos"
 }
