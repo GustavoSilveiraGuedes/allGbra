@@ -289,6 +289,7 @@ h1, h2, h3, option {
                                 }
 
                             section#math .subject-card .content .card-grid .card h3 {
+
                                 color: var(--color5);
                                 font-size: 1.2em;
                                 margin: 15px auto;

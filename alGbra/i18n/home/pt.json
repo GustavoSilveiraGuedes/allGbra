@@ -63,5 +63,12 @@
 
   "financialMathematicsH2": "Matemática Financeira",
   "simpleInterestH3": "Juros<br>Simples",
-  "compoundInterestH3": "Juros<br>Compostos"
+  "compoundInterestH3": "Juros<br>Compostos",
+
+  "combinatorialAnalysisH2": "Análise Combinatória",
+  "simplePermutationH3": "Permutação<br>Simples",
+  "repeatedPermutationH3": "Permutação<br>com Repetição",
+  "circularPermutationH3": "Permutação<br>Circular",
+  "arrangementH3": "Arranjo<br>Simples",
+  "combinationH3": "Combinação<br>Simples"
 }
