@@ -9,13 +9,14 @@
 
 
 :root {
-    color-scheme: dark;
-    forced-color-adjust: none;
     --color1: #61568C;
     --color2: #475459;
     --color3: #818B8C;
     --color4: #070A0D;
     --color5: #F2F2F2;
+
+    color-scheme: dark;
+    forced-color-adjust: none;
 }
 
 
@@ -27,7 +28,10 @@ body {
 }
 
 
-h1, h2, h3, option {
+h1,
+h2,
+h3,
+option {
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -37,18 +41,18 @@ h1, h2, h3, option {
 }
 
 
-.intro1 { 
-    animation: intro1 2s forwards; 
+.intro1 {
+    animation: intro1 2s forwards;
 }
 
 
-.intro2 { 
-    animation: intro2 1s forwards; 
+.intro2 {
+    animation: intro2 1s forwards;
 }
 
 
-.typing { 
-    animation: typing 1.5s steps(7) forwards; 
+.typing {
+    animation: typing 1.5s steps(7) forwards;
 }
 
 
@@ -59,257 +63,284 @@ h1, h2, h3, option {
 
 
 @keyframes intro2 {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 @keyframes typing {
-    0% { border-right: 3px solid var(--color1); width: 0; }
-    80% { border-right: 3px solid var(--color1); width: 7ch; }
-    100% { border-right: transparent; width: 7ch; }
+    0% {
+        border-right: 3px solid var(--color1);
+        width: 0;
+    }
+    80% {
+        border-right: 3px solid var(--color1);
+        width: 7ch;
+    }
+    100% {
+        border-right: transparent;
+        width: 7ch;
+    }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 
     header {
         display: flex;
         justify-content: center;
     }
 
-        header nav {
-            align-items: center;
-            backdrop-filter: blur(2px);
-            background-color: rgba(0, 0, 0, 0.4);
-            border: 1px solid var(--color1);
-            border-radius: 0 0 10px 10px;
-            border-top: 0;
-            display: flex;
-            justify-content: space-between;
-            min-width: 80vw;
-            padding: 10px 15px;
-            position: fixed;
-            z-index: 1;
-        }
+    header nav {
+        align-items: center;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid var(--color1);
+        border-radius: 0 0 10px 10px;
+        border-top: 0;
+        display: flex;
+        justify-content: space-between;
+        min-width: 80vw;
+        padding: 10px 15px;
+        position: fixed;
+        z-index: 1;
+    }
 
-            header nav a {
-                color: var(--color5);
-                margin: 0 15px;
-                text-decoration: none;
-                text-shadow: 1px 1px 1px var(--color4);
-                transition: 0.3s;
-            }
+    header nav a {
+        color: var(--color5);
+        margin: 0 15px;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px var(--color4);
+        transition: 0.3s;
+    }
 
-            header nav svg {
-                height: 40px;
-                width: 40px;
-            }
+    header nav svg {
+        height: 40px;
+        width: 40px;
+    }
 
 
     main section {
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 150px 10px 10px 10px;
+        padding: 150px 10px 10px;
     }
 
-        /* --- Seção alGbra --- */
-        section#alGbra div {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            margin: 200px 0;
-        }
 
-            section#alGbra div a {
-                background-color: var(--color1);
-                border-radius: 10px;
-                color: var(--color5);
-                margin-top: 20px;
-                padding: 10px 50px;
-                transition: 0.2s;
-            }
+    /* --- Seção alGbra --- */
 
-                section#alGbra div a svg {
-                    width: 30px;
-                }
+    section#alGbra div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 200px 0;
+    }
 
-            section#alGbra div h2 {
-                border-bottom: 1px solid var(--color1);
-                font-size: 1.7em;
-            }
+    section#alGbra div a {
+        background-color: var(--color1);
+        border-radius: 10px;
+        color: var(--color5);
+        margin-top: 20px;
+        padding: 10px 50px;
+        transition: 0.2s;
+    }
 
-        section#alGbra h1 {
-            font-size: 4em;
-            margin-bottom: 30px;
-            overflow: hidden;
-            white-space: nowrap;
-        }
+    section#alGbra div a svg {
+        width: 30px;
+    }
 
-        section#alGbra .language-container {
-            margin: 0;
-        }
+    section#alGbra div h2 {
+        border-bottom: 1px solid var(--color1);
+        font-size: 1.7em;
+    }
 
-            section#alGbra .language-container #language-toggle {
-                background-color: transparent;
-                border: 1px solid var(--color1);
-                border-radius: 5px;
-                color: var(--color5);
-                padding: 5px;
-                width: 70px;
-            }
+    section#alGbra h1 {
+        font-size: 4em;
+        margin-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 
-        section#alGbra #linkalGbra {
-            align-items: center;
-            color: var(--color1);
-            display: flex;
-            font-size: 0.7em;
-            gap: 3px;
-            margin: 70px 0 10px 0;
-            text-decoration: none;
-        }
+    section#alGbra .language-container {
+        margin: 0;
+    }
 
-            section#alGbra #linkalGbra svg {
-                width: 10px;
-            }
+    section#alGbra .language-container #language-toggle {
+        background-color: transparent;
+        border: 1px solid var(--color1);
+        border-radius: 5px;
+        color: var(--color5);
+        padding: 5px;
+        width: 70px;
+    }
 
-        section#alGbra p {
-            color: var(--color3);
-            line-height: 25px;
-            max-width: 400px;
-            text-align: justify;
-        }
+    section#alGbra #linkalGbra {
+        align-items: center;
+        color: var(--color1);
+        display: flex;
+        font-size: 0.7em;
+        gap: 3px;
+        margin: 70px 0 10px;
+        text-decoration: none;
+    }
+
+    section#alGbra #linkalGbra svg {
+        width: 10px;
+    }
+
+    section#alGbra p {
+        color: var(--color3);
+        line-height: 25px;
+        max-width: 400px;
+        text-align: justify;
+    }
 
 
-        /* --- Seção Math --- */
-        section#math {
-            margin: 100px 0;
-        }
+    /* --- Seção Math --- */
 
-            section#math h1 {
-                border-left: 1px solid var(--color1);
-                border-right: 1px solid var(--color1);
-                font-size: 2em;
-                margin-bottom: 30px;
-                padding: 0 15px;
-            }
+    section#math {
+        margin: 100px 0;
+    }
 
-            section#math h2 {
-                margin: 5px 0;
-            }
+    section#math h1 {
+        border-left: 1px solid var(--color1);
+        border-right: 1px solid var(--color1);
+        font-size: 2em;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
 
-            section#math p {
-                color: var(--color3);
-                margin-bottom: 50px;
-                text-align: center;
-            }
+    section#math h2 {
+        margin: 5px 0;
+    }
 
-            section#math .subject-card {
-                margin-bottom: 15px;
-                width: 85vw;
-            }
+    section#math p {
+        color: var(--color3);
+        margin-bottom: 50px;
+        text-align: center;
+    }
 
-                section#math .subject-card.active .content {
-                    border-color: var(--subject-color);
-                    border-radius: 0 0 5px 5px;
-                    box-shadow: 0px 0px 20px -10px var(--subject-color);
-                    opacity: 1;
-                    padding: 20px 10px;
-                }
+    section#math .subject-card {
+        margin-bottom: 15px;
+        width: 85vw;
+    }
 
-                    section#math .subject-card.active .content h2 {
-                        border-bottom: 1px solid white;
-                        margin: 30px 0;
-                        text-align: center;
-                        width: 100%;
-                    }
 
-                section#math .subject-card.active .set {
-                    border-radius: 5px 5px 0 0;
-                }
+    /* --- CONTENT (ACORDEÃO) --- */
 
-                    section#math .subject-card.active .set svg {
-                        transform: rotate(90deg);
-                    }
+    section#math .subject-card .content {
+        border: 1px solid transparent;
+        border-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition:
+            border-color 0.4s ease,
+            max-height 0.4s ease,
+            opacity 0.3s ease;
+        visibility: hidden;
+        width: 99%;
+    }
 
-                section#math .subject-card .content {
-                    border: 1px solid transparent;
-                    border-top: 0;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin: 0 auto;
-                    max-height: 0;
-                    opacity: 0;
-                    overflow: hidden;
-                    transition: border-color 0.4s ease, max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
-                    width: 99%;
-                }
+    section#math .subject-card.active .content {
+        border-color: var(--subject-color);
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 20px -10px var(--subject-color);
+        opacity: 1;
+        padding: 20px 10px;
+        visibility: visible;
+    }
 
-                    section#math .subject-card .content .card-grid {
-                        align-items: flex-start;
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 15px;
-                        justify-content: center;
-                        width: 100%;
-                    }
+    section#math .subject-card.active .content h2 {
+        border-bottom: 1px solid white;
+        margin: 30px 0;
+        text-align: center;
+        width: 100%;
+    }
 
-                        section#math .subject-card .content .card-grid .card {
-                            background-color: transparent;
-                            border: 1px solid var(--color5);
-                            display: flex;
-                            flex: 1 1 200px;
-                            flex-direction: column;
-                            margin: 5px;
-                            max-width: 70%;
-                        }
 
-                            section#math .subject-card .content .card-grid .card a {
-                                align-items: center;
-                                border: 1px solid var(--color5);
-                                border-radius: 5px;
-                                color: var(--color5);
-                                display: flex;
-                                gap: 8px;
-                                justify-content: center;
-                                padding: 5px;
-                                text-decoration: none;
-                                transition: 0.3s;
-                            }
+    /* --- GRID --- */
 
-                                section#math .subject-card .content .card-grid .card a::after {
-                                    background-color: var(--color5);
-                                    content: "";
-                                    height: 15px;
-                                    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
-                                    width: 15px;
-                                }
+    section#math .subject-card .content .card-grid {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        justify-items: center;
+        width: 100%;
+    }
 
-                            section#math .subject-card .content .card-grid .card h3 {
+    section#math .subject-card .content .card-grid .card {
+        background-color: transparent;
+        border: 1px solid var(--color5);
+        max-width: 350px;
+        width: 100%;
+    }
 
-                                color: var(--color5);
-                                font-size: 1.2em;
-                                margin: 15px auto;
-                                text-align: center;
-                            }
+    section#math .subject-card .content .card-grid .card a {
+        align-items: center;
+        border: 1px solid var(--color5);
+        border-radius: 5px;
+        color: var(--color5);
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        padding: 5px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 
-                section#math .subject-card .set {
-                    align-items: center;
-                    border: 1px solid var(--subject-color);
-                    border-radius: 5px;
-                    box-shadow: 0px 0px 20px -10px var(--subject-color);
-                    color: var(--subject-color);
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 10px 15px;
-                    transition: border-radius 0.3s;
-                }
+    section#math .subject-card .content .card-grid .card a::after {
+        background-color: var(--color5);
+        content: "";
+        height: 15px;
+        mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
+        width: 15px;
+    }
 
-                    section#math .subject-card .set svg {
-                        transition: transform 0.3s ease;
-                        width: 25px;
-                    }
+    section#math .subject-card .content .card-grid .card h3 {
+        color: var(--color5);
+        font-size: 1.2em;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+
+    /* --- SET --- */
+
+    section#math .subject-card .set {
+        align-items: center;
+        border: 1px solid var(--subject-color);
+        border-radius: 5px;
+        box-shadow: 0 0 20px -10px var(--subject-color);
+        color: var(--subject-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        transition: border-radius 0.3s;
+    }
+
+    section#math .subject-card.active .set {
+        border-radius: 5px 5px 0 0;
+    }
+
+    section#math .subject-card .set svg {
+        transition: transform 0.3s ease;
+        width: 25px;
+    }
+
+    section#math .subject-card.active .set svg {
+        transform: rotate(90deg);
+    }
 }
