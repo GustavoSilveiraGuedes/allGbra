@@ -273,17 +273,18 @@ option {
     /* --- GRID --- */
 
     section#math .subject-card .content .card-grid {
-        display: grid;
-        gap: 15px;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        justify-items: center;
-        width: 100%;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            justify-items: center;
+            max-width: calc(3 * 350px + 2 * 15px); /* 3 cards + gaps */
+            width: 100%;
     }
 
     section#math .subject-card .content .card-grid .card {
         background-color: transparent;
         border: 1px solid var(--color5);
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
     }
 
