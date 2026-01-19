@@ -90,7 +90,7 @@ option {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1299px) {
 
     header {
         display: flex;
@@ -117,7 +117,6 @@ option {
         margin: 0 15px;
         text-decoration: none;
         text-shadow: 1px 1px 1px var(--color4);
-        transition: 0.3s;
     }
 
     header nav svg {
@@ -125,12 +124,46 @@ option {
         width: 40px;
     }
 
+}
+
+@media (min-width: 1300px){
+
+    header {
+        margin: auto;
+        padding: 40px 0;
+        width: 80vw;
+    }
+
+    header nav {
+        align-items: end;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        font-size: 1.2em;
+        color: var(--color5);
+        margin: 0 15px;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px var(--color4);
+        transition: 0.3s;
+    }
+        header nav a:hover{
+            transform: translateY(-2px);
+        }
+
+    header nav svg {
+        height: 50px;
+        width: 50px;
+    }
+}
+    
 
     main section {
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 150px 10px 10px;
+        padding: 120px 10px 10px;
     }
 
 
@@ -198,7 +231,7 @@ option {
     section#alGbra p {
         color: var(--color3);
         line-height: 25px;
-        max-width: 400px;
+        max-width: 500px;
         text-align: justify;
     }
 
@@ -344,4 +377,3 @@ option {
     section#math .subject-card.active .set svg {
         transform: rotate(90deg);
     }
-}
