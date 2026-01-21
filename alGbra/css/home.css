@@ -28,7 +28,10 @@ body {
 }
 
 
-h1, h2, h3, option {
+h1,
+h2,
+h3,
+option {
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -54,8 +57,13 @@ h1, h2, h3, option {
 
 
 @keyframes intro1 {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -64,6 +72,7 @@ h1, h2, h3, option {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -76,10 +85,12 @@ h1, h2, h3, option {
         border-right: 3px solid var(--color1);
         width: 0;
     }
+
     80% {
         border-right: 3px solid var(--color1);
         width: 7ch;
     }
+
     100% {
         border-right: transparent;
         width: 7ch;
@@ -88,6 +99,15 @@ h1, h2, h3, option {
 
 
 @media (max-width: 1299px) {
+
+    p {
+        color: var(--color3);
+        line-height: 25px;
+        max-width: 500px;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
 
     header {
         display: flex;
@@ -120,23 +140,23 @@ h1, h2, h3, option {
         width: 40px;
     }
 
-    header nav a[data-i18n="homeA"]{
+    header nav a[data-i18n="homeA"] {
         order: 1;
     }
 
-    header nav a[data-i18n="mathA"]{
+    header nav a[data-i18n="mathA"] {
         order: 2;
     }
 
-    header nav a[href="html/account/login.html"]{
+    header nav a[href="html/account/login.html"] {
         order: 3;
     }
 
-    header nav a[data-i18n="physA"]{
+    header nav a[data-i18n="physA"] {
         order: 4;
     }
 
-    header nav a[data-i18n="aboutA"]{
+    header nav a[data-i18n="aboutA"] {
         order: 5;
     }
 
@@ -150,38 +170,7 @@ h1, h2, h3, option {
 
     /* --- Seção alGbra --- */
 
-    section#alGbra div {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin: 200px 0;
-    }
-
-    section#alGbra div a {
-        background-color: var(--color1);
-        border-radius: 10px;
-        color: var(--color5);
-        margin-top: 20px;
-        padding: 10px 70px;
-        transition: 0.2s;
-    }
-
-    section#alGbra div a svg {
-        width: 30px;
-    }
-
-    section#alGbra div h2 {
-        border-bottom: 1px solid var(--color1);
-        font-size: 1.7em;
-    }
-
-    section#alGbra h1 {
-        font-size: 4em;
-        margin-bottom: 30px;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
+    
     section#alGbra .language-container {
         margin: 0;
     }
@@ -209,25 +198,43 @@ h1, h2, h3, option {
         width: 10px;
     }
 
-    section#alGbra p {
-        color: var(--color3);
-        line-height: 25px;
-        max-width: 500px;
-        padding: 0 10px;
-        text-align: justify;
+    section#alGbra h1 {
+        font-size: 5em;
+        margin-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
+    section#alGbra div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 200px 0;
+    }
+
+    section#alGbra div a {
+        background-color: var(--color1);
+        border-radius: 10px;
+        color: var(--color5);
+        margin-top: 20px;
+        padding: 10px 70px;
+    }
+
+    section#alGbra div a svg {
+        width: 30px;
+    }
+
+    section#alGbra div h2 {
+        border-bottom: 1px solid var(--color1);
+        font-size: 1.7em;
+    }
 
     /* --- Seção Math --- */
-
-    section#math {
-        margin: 100px 0;
-    }
 
     section#math h1 {
         border-left: 1px solid var(--color1);
         border-right: 1px solid var(--color1);
-        font-size: 2.2em;
+        font-size: 2.4em;
         margin-bottom: 30px;
         padding: 0 15px;
     }
@@ -236,18 +243,11 @@ h1, h2, h3, option {
         margin: 5px 0;
     }
 
-    section#math p {
-        color: var(--color3);
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
     section#math .subject-card {
         margin-bottom: 15px;
         max-width: 2000px;
         width: 80vw;
     }
-
 
     /* --- CONTENT (ACORDEÃO) --- */
 
@@ -289,12 +289,13 @@ h1, h2, h3, option {
     /* --- GRID --- */
 
     section#math .subject-card .content .card-grid {
-            display: grid;
-            gap: 15px;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            justify-items: center;
-            max-width: calc(3 * 350px + 2 * 15px); /* 3 cards + gaps */
-            width: 100%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        justify-items: center;
+        max-width: calc(3 * 350px + 2 * 15px);
+        /* 3 cards + gaps */
+        width: 100%;
     }
 
     section#math .subject-card .content .card-grid .card {
@@ -363,103 +364,78 @@ h1, h2, h3, option {
 
 }
 
-@media (min-width: 1300px) and (max-width: 1899px){
+@media (min-width: 1300px) and (max-width: 1799px) {
+
+    p {
+        color: var(--color3);
+        font-size: 1.1em;
+        line-height: 25px;
+        max-width: 600px;
+        padding: 0 10px;
+        text-align: justify;
+    }
 
     header {
         background-color: rgba(0, 0, 0, 0.4);
         border-bottom: 1px solid var(--color1);
     }
-    
+
     header nav {
         align-items: end;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        max-width: 2000px;
-        padding: 10px 130px;
     }
 
     header nav a {
         color: var(--color5);
         font-size: 1.2em;
+        padding: 10px;
+        text-align: center;
         text-decoration: none;
         text-shadow: 1px 1px 1px var(--color4);
         transition: 0.3s;
+        width: 100px;
     }
-        header nav a:hover{
-            transform: translateY(-2px);
-        }
+
+    header nav a:hover {
+        background-color: var(--color1);
+    }
 
     header nav svg {
         width: 50px;
     }
 
-    header nav a[data-i18n="homeA"]{
+    header nav a[data-i18n="homeA"] {
         order: 1;
     }
 
-    header nav a[data-i18n="mathA"]{
+    header nav a[data-i18n="mathA"] {
         order: 2;
     }
-    
-    header nav a[data-i18n="physA"]{
+
+    header nav a[data-i18n="physA"] {
         order: 3;
     }
 
-    header nav a[data-i18n="aboutA"]{
+    header nav a[data-i18n="aboutA"] {
         order: 4;
     }
 
-    header nav a[href="html/account/login.html"]{
+    header nav a[href="html/account/login.html"] {
         order: 5;
-    }
-
-    section#alGbra h1{
-        font-size: 5.5em;
     }
 
     main section {
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 120px 10px 10px;
+        padding: 100px 10px 10px;
     }
 
 
     /* --- Seção alGbra --- */
-
-    section#alGbra div {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin: 200px 0;
-    }
-
-    section#alGbra div a {
-        background-color: var(--color1);
-        border-radius: 10px;
-        color: var(--color5);
-        margin-top: 20px;
-        padding: 10px 70px;
-        transition: 0.2s;
-    }
-
-    section#alGbra div a svg {
-        width: 30px;
-    }
-
-    section#alGbra div h2 {
-        border-bottom: 1px solid var(--color1);
-        font-size: 2em;
-    }
-
-    section#alGbra h1 {
-        font-size: 5em;
-        margin-bottom: 30px;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
+    
     section#alGbra .language-container {
         margin: 0;
     }
@@ -469,6 +445,7 @@ h1, h2, h3, option {
         border: 1px solid var(--color1);
         border-radius: 5px;
         color: var(--color5);
+        margin-top: 50px;
         padding: 5px;
         width: 70px;
     }
@@ -487,21 +464,40 @@ h1, h2, h3, option {
         width: 10px;
     }
 
-    section#alGbra p {
-        color: var(--color3);
-        font-size: 1.1em;
-        line-height: 25px;
-        max-width: 500px;
-        padding: 0 10px;
-        text-align: justify;
+    section#alGbra h1 {
+        font-size: 6em;
+        margin-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
+    section#alGbra div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 200px 0;
+    }
+
+    
+    section#alGbra div h2 {
+        border-bottom: 1px solid var(--color1);
+        font-size: 2em;
+        margin-top: 200px;
+    }
+    
+    section#alGbra div a {
+        background-color: var(--color1);
+        border-radius: 10px;
+        color: var(--color5);
+        margin-top: 20px;
+        padding: 10px 70px;
+    }
+
+    section#alGbra div a svg {
+        width: 30px;
+    }
 
     /* --- Seção Math --- */
-
-    section#math {
-        margin: 100px 0;
-    }
 
     section#math h1 {
         border-left: 1px solid var(--color1);
@@ -515,16 +511,8 @@ h1, h2, h3, option {
         margin: 5px 0;
     }
 
-    section#math p {
-        color: var(--color3);
-        font-size: 1.1em;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
     section#math .subject-card {
         margin-bottom: 15px;
-        max-width: 2000px;
         width: 80vw;
     }
 
@@ -565,16 +553,16 @@ h1, h2, h3, option {
         width: 100%;
     }
 
-
     /* --- GRID --- */
 
     section#math .subject-card .content .card-grid {
-            display: grid;
-            gap: 15px;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            justify-items: center;
-            max-width: calc(3 * 350px + 2 * 15px); /* 3 cards + gaps */
-            width: 100%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        justify-items: center;
+        max-width: calc(3 * 350px + 2 * 15px);
+        /* 3 cards + gaps */
+        width: 100%;
     }
 
     section#math .subject-card .content .card-grid .card {
@@ -628,18 +616,17 @@ h1, h2, h3, option {
         transition: border-radius 0.3s;
     }
 
-    
+    section#math .subject-card .set h2 {
+        font-size: 2.2em;
+    }
+
     section#math .subject-card.active .set {
         border-radius: 5px 5px 0 0;
-    }
-    
-    section#math .subject-card .set h2{
-        font-size: 2.4em;
     }
 
     section#math .subject-card .set svg {
         transition: transform 0.3s ease;
-        width: 30px;
+        width: 25px;
     }
 
     section#math .subject-card.active .set svg {
@@ -648,103 +635,80 @@ h1, h2, h3, option {
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1800px) {
+    
+    p {
+        color: var(--color3);
+        font-size: 1.5em;
+        line-height: 30px;
+        max-width: 700px;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
 
     header {
         background-color: rgba(0, 0, 0, 0.4);
         border-bottom: 1px solid var(--color1);
     }
-    
+
     header nav {
         align-items: end;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        max-width: 2000px;
-        padding: 10px 130px;
+        max-width: 1900px;
     }
 
     header nav a {
         color: var(--color5);
-        font-size: 1.2em;
+        font-size: 1.6em;
+        padding: 10px;
+        text-align: center;
         text-decoration: none;
         text-shadow: 1px 1px 1px var(--color4);
         transition: 0.3s;
+        width: 100px;
     }
-        header nav a:hover{
-            transform: translateY(-2px);
-        }
+
+    header nav a:hover {
+        background-color: var(--color1);
+    }
 
     header nav svg {
-        width: 50px;
+        width: 60px;
     }
 
-    header nav a[data-i18n="homeA"]{
+    header nav a[data-i18n="homeA"] {
         order: 1;
     }
 
-    header nav a[data-i18n="mathA"]{
+    header nav a[data-i18n="mathA"] {
         order: 2;
     }
-    
-    header nav a[data-i18n="physA"]{
+
+    header nav a[data-i18n="physA"] {
         order: 3;
     }
 
-    header nav a[data-i18n="aboutA"]{
+    header nav a[data-i18n="aboutA"] {
         order: 4;
     }
 
-    header nav a[href="html/account/login.html"]{
+    header nav a[href="html/account/login.html"] {
         order: 5;
-    }
-
-    section#alGbra h1{
-        font-size: 5.5em;
     }
 
     main section {
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 120px 10px 10px;
+        padding: 100px 10px 10px;
     }
 
 
     /* --- Seção alGbra --- */
-
-    section#alGbra div {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin: 200px 0;
-    }
-
-    section#alGbra div a {
-        background-color: var(--color1);
-        border-radius: 10px;
-        color: var(--color5);
-        margin-top: 20px;
-        padding: 10px 70px;
-        transition: 0.2s;
-    }
-
-    section#alGbra div a svg {
-        width: 30px;
-    }
-
-    section#alGbra div h2 {
-        border-bottom: 1px solid var(--color1);
-        font-size: 2em;
-    }
-
-    section#alGbra h1 {
-        font-size: 5em;
-        margin-bottom: 30px;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
+    
     section#alGbra .language-container {
         margin: 0;
     }
@@ -754,8 +718,10 @@ h1, h2, h3, option {
         border: 1px solid var(--color1);
         border-radius: 5px;
         color: var(--color5);
-        padding: 5px;
-        width: 70px;
+        font-size: 1.3em;
+        margin-top: 100px;
+        padding: 10px;
+        width: 100px;
     }
 
     section#alGbra #linkalGbra {
@@ -763,7 +729,7 @@ h1, h2, h3, option {
         color: var(--color1);
         display: flex;
         gap: 3px;
-        font-size: .8em;
+        font-size: 1em;
         margin: 70px 0 10px;
         text-decoration: none;
     }
@@ -772,26 +738,44 @@ h1, h2, h3, option {
         width: 10px;
     }
 
-    section#alGbra p {
-        color: var(--color3);
-        font-size: 1.1em;
-        line-height: 25px;
-        max-width: 500px;
-        padding: 0 10px;
-        text-align: justify;
+    section#alGbra h1 {
+        font-size: 8em;
+        margin-bottom: 30px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
+    section#alGbra div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 400px 0;
+    }
+
+    
+    section#alGbra div h2 {
+        border-bottom: 1px solid var(--color1);
+        font-size: 2.7em;
+    }
+    
+    section#alGbra div a {
+        background-color: var(--color1);
+        border-radius: 10px;
+        color: var(--color5);
+        margin-top: 20px;
+        padding: 15px 80px;
+    }
+
+    section#alGbra div a svg {
+        width: 40px;
+    }
 
     /* --- Seção Math --- */
-
-    section#math {
-        margin: 100px 0;
-    }
 
     section#math h1 {
         border-left: 1px solid var(--color1);
         border-right: 1px solid var(--color1);
-        font-size: 3em;
+        font-size: 4em;
         margin-bottom: 30px;
         padding: 0 15px;
     }
@@ -800,16 +784,9 @@ h1, h2, h3, option {
         margin: 5px 0;
     }
 
-    section#math p {
-        color: var(--color3);
-        font-size: 1.1em;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
     section#math .subject-card {
         margin-bottom: 15px;
-        max-width: 2000px;
+        max-width: 1900px;
         width: 80vw;
     }
 
@@ -830,7 +807,6 @@ h1, h2, h3, option {
             border-color 0.4s ease,
             max-height 0.4s ease,
             opacity 0.3s ease;
-        visibility: hidden;
         width: 99%;
     }
 
@@ -840,32 +816,32 @@ h1, h2, h3, option {
         box-shadow: 0 0 20px -10px var(--subject-color);
         opacity: 1;
         padding: 20px 10px;
-        visibility: visible;
     }
 
     section#math .subject-card.active .content h2 {
         border-bottom: 1px solid white;
+        font-size: 2.2em;
         margin: 30px 0;
         text-align: center;
         width: 100%;
     }
 
-
     /* --- GRID --- */
 
     section#math .subject-card .content .card-grid {
-            display: grid;
-            gap: 15px;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            justify-items: center;
-            max-width: calc(3 * 350px + 2 * 15px); /* 3 cards + gaps */
-            width: 100%;
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        justify-items: center;
+        max-width: calc(3 * 450px + 2 * 25px);
+        /* 3 cards + gaps */
+        width: 100%;
     }
 
     section#math .subject-card .content .card-grid .card {
         background-color: transparent;
         border: 1px solid var(--color5);
-        max-width: 300px;
+        max-width: 450px;
         width: 100%;
     }
 
@@ -875,6 +851,7 @@ h1, h2, h3, option {
         border-radius: 5px;
         color: var(--color5);
         display: flex;
+        font-size: 1.3em;
         gap: 8px;
         justify-content: center;
         padding: 5px;
@@ -885,14 +862,14 @@ h1, h2, h3, option {
     section#math .subject-card .content .card-grid .card a::after {
         background-color: var(--color5);
         content: "";
-        height: 15px;
+        height: 20px;
         mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>');
-        width: 15px;
+        width: 20px;
     }
 
     section#math .subject-card .content .card-grid .card h3 {
         color: var(--color5);
-        font-size: 1.2em;
+        font-size: 1.7em;
         margin: 15px auto;
         text-align: center;
     }
@@ -913,24 +890,21 @@ h1, h2, h3, option {
         transition: border-radius 0.3s;
     }
 
-    
     section#math .subject-card.active .set {
         border-radius: 5px 5px 0 0;
     }
-    
+
     section#math .subject-card .set h2{
-        font-size: 2.4em;
+        font-size: 3em;
     }
 
     section#math .subject-card .set svg {
         transition: transform 0.3s ease;
-        width: 30px;
+        width: 35px;
     }
 
     section#math .subject-card.active .set svg {
         transform: rotate(90deg);
     }
-
-
 
 }
