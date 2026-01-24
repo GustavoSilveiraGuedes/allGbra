@@ -378,13 +378,14 @@ h1, h2, h3, option {
     }
 
     header nav {
-        align-items: end;
         display: flex;
         justify-content: space-between;
         margin: auto;
+        max-width: 1400px;
     }
 
     header nav a {
+        align-self: center;
         color: var(--color5);
         font-size: 1.2em;
         padding: 10px;
@@ -396,7 +397,7 @@ h1, h2, h3, option {
     }
 
     header nav a:hover {
-        background-color: var(--color1);
+        transform: translateY(-2px);
     }
 
     header nav svg {
@@ -650,14 +651,14 @@ h1, h2, h3, option {
     }
 
     header nav {
-        align-items: end;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        max-width: 1900px;
+        max-width: 1400px;
     }
 
     header nav a {
+        align-self: center;
         color: var(--color5);
         font-size: 1.6em;
         padding: 10px;
@@ -669,7 +670,7 @@ h1, h2, h3, option {
     }
 
     header nav a:hover {
-        background-color: var(--color1);
+        transform: translateY(-2px);
     }
 
     header nav svg {
