@@ -121,7 +121,7 @@ h1, h2, h3, option {
     }
 
     .language-container {
-        margin-top: 120px;
+        margin-top: 100px;
         text-align: center;
     }
 
@@ -134,12 +134,24 @@ h1, h2, h3, option {
         width: 70px;
     }
 
+    section#aboutSection{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+    }
+
+    section#aboutSection div{
+        max-width: 500px;
+    }
+
     section#aboutSection h1{
         text-align: start;
     }
 
     section#aboutSection img{
-        width: 250px;
+        display: block;
+        margin: auto;
+        width: 60%;
     }
 
     section#languagesSection h2{
@@ -148,30 +160,28 @@ h1, h2, h3, option {
         text-align: start;
     }
 
-    section#languagesSection div.container{
-        margin-top: 25px;
-    }
-
     section#languagesSection div.col{
         background-color: rgba(0, 0, 0, 0.4);
         border: 1px solid var(--color1);
         border-radius: 10px;
-        margin: 0 5px;
+        margin: 5px;
+        min-width: 250px;
     }
 
     section#languagesSection .languages{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         padding: 0 30px;
     }
 
     section#languagesSection p{
+        display: inline-block;
         background-color: rgba(0, 0, 0, 0.4);
         border: 1px solid var(--color1);
         border-radius: 15px;
+        margin: 5px;
         min-width: 50px;
-        padding: 2px 5px;
+        padding: 2px;
         text-align: center;
     }
 
