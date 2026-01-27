@@ -4,5 +4,10 @@
     "physA": "Phys",
     "aboutA": "About",
 
-    "aboutMeH1": "About Me"
+    "aboutMeH1": "About Me",
+    "whatIKnowH1": "What I Know",
+
+    "contactEmailP": "Contact Email: gustavosilveiraguedes@gmail.com",
+    "contactNumberP": "Contact Number: +99 (99) 99999-9999"
+
 }

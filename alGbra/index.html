@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="img/visual/icon.svg" rel="shortcut icon" type="image/x-icon">
     <title>alGbra</title>
 </head>
@@ -35,10 +36,10 @@
     </header>
 
     <main>
+        <div class="language-container hiddenScroll" data-animation="intro1">
+            <button id="language-toggle" class="lang-button">EN-US</button>
+        </div>
         <section id="alGbra">
-            <div class="language-container hiddenScroll" data-animation="intro1">
-                <button id="language-toggle" class="lang-button">EN-US</button>
-            </div>
 
             <a id="linkalGbra" class="hiddenScroll" href="#" data-animation="intro1">
                 <svg class="bi bi-amd" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -575,11 +576,17 @@
     </main>
 
     <footer>
-
+        <div>
+            <p>Email para contato: gustavosilveiraguedes@gmail.com</p>
+            <p>Numero para contato: +55 (44) 99357-1186</p>
+        </div>
+        <div>
+            <a href="https://github.com/GustavoSilveiraGuedes" target="_blank"><img src="img/visual/gitHub.svg"></a>
+            <a href="https://www.instagram.com/elbatatonn/" target="_blank"><img src="img/visual/instagram.svg"></a>
+        </div>
     </footer>
 
-    <script src="js/global/animation.js"></script>
-    <script src="js/global/language.js"></script>
+    <script src="js/global.js"></script>
     <script src="js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
