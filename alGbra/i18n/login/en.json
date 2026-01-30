@@ -4,6 +4,13 @@
   "physA": "Phys",
   "aboutA": "About",
 
+  "welcomeH1": "welcome",
+  "usernameInput": "Username",
+  "emalInput": "Email",
+  "passwordInput": "Password",
+  "submitInput": "Submit",
+  "registerA": "Register",
+
   "contactEmailP": "Contact Email: gustavosilveiraguedes@gmail.com",
   "contactNumberP": "Contact Number: +99 (99) 99999-9999"
 }

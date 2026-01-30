@@ -1,7 +1,7 @@
 /**
  * global.js
  * Funcionalidades globais do site:
- * - Sistema de idioma
+ * - Sistema de idioma (i18n)
  * - Animações por IntersectionObserver
  */
 
@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!entry.isIntersecting) return;
 
             const el = entry.target;
-
             el.classList.remove('hiddenScroll');
             el.classList.add(el.dataset.animation);
         });
@@ -52,19 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document
         .querySelectorAll('[data-animation]')
         .forEach(el => animationObserver.observe(el));
-
 });
 
 
 /* =====================================================
    FUNÇÃO GLOBAL DE TRADUÇÃO
-   (acessível em qualquer página)
+   (funciona em qualquer página)
 ===================================================== */
 
 async function changeLanguage(lang) {
     try {
         const body = document.body;
 
+        // Caminhos configuráveis pelo HTML
         const basePath = body.dataset.basePath ?? '.';
         const pagePath = body.dataset.i18nPath ?? 'home';
 
@@ -80,7 +79,16 @@ async function changeLanguage(lang) {
 
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.dataset.i18n;
-            if (translations[key]) {
+            const attr = el.dataset.i18nAttr;
+
+            if (!translations[key]) return;
+
+            // Se tiver atributo, aplica nele (placeholder, value, etc.)
+            if (attr) {
+                el.setAttribute(attr, translations[key]);
+            } 
+            // Senão, aplica como texto normal
+            else {
                 el.innerHTML = translations[key];
             }
         });

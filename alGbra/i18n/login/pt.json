@@ -4,6 +4,13 @@
   "physA": "Fís",
   "aboutA": "Sobre",
 
+  "welcomeH1": "Bem-Vindo",
+  "usernameInput": "Usuário",
+  "emalInput": "Email",
+  "passwordInput": "Senha",
+  "submitInput": "Enviar",
+  "registerA": "Cadastrar",
+
   "contactEmailP": "Email Para Contato: gustavosilveiraguedes@gmail.com",
   "contactNumberP": "Numero Para Contato: +99 (99) 99999-9999"
 }
