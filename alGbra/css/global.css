@@ -182,12 +182,6 @@ h1, h2, h3, option {
         width: 50px;
     }
 
-    /* ______________________________ */
-
-        section#login{
-            border: 1px solid var(--color1);
-        }
-
 }
 
 @media (min-width: 1300px) and (max-width: 1799px) {
