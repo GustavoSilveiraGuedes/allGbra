@@ -8,7 +8,8 @@
   "usernameInput": "Username",
   "emalInput": "Email",
   "passwordInput": "Password",
-  "submitInput": "Submit",
+  "confirmPasswordInput": "Confirm Password",
+  "submitInput": "Confirm",
   "registerA": "Register",
 
   "contactEmailP": "Contact Email: gustavosilveiraguedes@gmail.com",

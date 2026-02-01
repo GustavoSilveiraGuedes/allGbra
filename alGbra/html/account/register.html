@@ -1,0 +1,87 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/global.css" rel="stylesheet">
+    <link href="../../css/account.css" rel="stylesheet">
+    <link href="../../img/visual/icon.svg" rel="shortcut icon" type="image/x-icon">
+    <title>alGbra</title>
+</head>
+
+<body data-base-path="../../" data-i18n-path="account">
+    <header>
+        <nav>
+            <a href="../../index.html" id="homeSvg">
+                <svg class="bi bi-amd" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0zM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2z" />
+                </svg>
+            </a>
+            <a href="../../index.html" data-i18n="homeA">Home</a>
+            <a href="../../index.html" data-i18n="mathA">Math</a>
+            <a href="#" id="login">
+                <svg class="bi bi-person-circle" fill="currentColor" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                        fill-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="../../index.html" data-i18n="physA">Phys</a>
+            <a href="../browse/about.html" data-i18n="aboutA">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="language-container hiddenScroll" data-animation="intro1">
+            <button id="language-toggle" class="lang-button">EN-US</button>
+        </div>
+
+        <section id="login" class="hiddenScroll" data-animation="intro1">
+            <h1 class="hiddenScroll" data-animation="intro2" data-i18n="welcomeH1">Welcome</h1>
+            <form method="get">
+                <input type="text" name="name" id="iname" placeholder="Username" data-i18n="usernameInput"
+                    data-i18n-attr="placeholder" class="hiddenScroll" data-animation="intro1" required>
+
+                <input type="email" name="email" id="iemal" placeholder="Email" data-i18n="emalInput"
+                    data-i18n-attr="placeholder" class="hiddenScroll" data-animation="intro1" required>
+
+                <input type="password" name="password" id="ipassword" placeholder="Password" data-i18n="passwordInput"
+                    data-i18n-attr="placeholder" class="hiddenScroll" data-animation="intro1" required>
+
+                <input type="password" name="password" id="ipassword" placeholder="Confirm Password" data-i18n="confirmPasswordInput"
+                    data-i18n-attr="placeholder" class="hiddenScroll" data-animation="intro1" required>
+
+
+                <input type="submit" value="Submit" data-i18n="submitInput" data-i18n-attr="value" class="hiddenScroll"
+                    data-animation="intro1">
+            </form>
+            <div>
+                <a href="#" class="hiddenScroll" data-animation="intro1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-google"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+                    </svg>
+                </a>
+                <a href="login.html" class="hiddenScroll" data-animation="intro1">Login</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p data-i18n="contactEmailP">Contact Email: gustavosilveiraguedes@gmail.com</p>
+            <p data-i18n="contactNumberP">Contact Number: +99 (99) 99999-9999</p>
+        </div>
+        <div>
+            <a href="https://github.com/GustavoSilveiraGuedes" target="_blank"><img
+                    src="../../img/visual/gitHub.svg"></a>
+            <a href="https://www.instagram.com/elbatatonn/" target="_blank"><img
+                    src="../../img/visual/instagram.svg"></a>
+        </div>
+    </footer>
+
+    <script src="../../js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -14,7 +14,7 @@
         flex-flow: column nowrap;
         align-items: center;
         gap: 15px;
-        width: 50%;
+        width: 60%;
     }
 
     form input{
