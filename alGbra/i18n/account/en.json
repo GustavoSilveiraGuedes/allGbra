@@ -9,6 +9,7 @@
   "emalInput": "Email",
   "passwordInput": "Password",
   "confirmPasswordInput": "Confirm Password",
+  "rememberMeLabel": "Remember Me",
   "submitInput": "Confirm",
   "registerA": "Register",
 
