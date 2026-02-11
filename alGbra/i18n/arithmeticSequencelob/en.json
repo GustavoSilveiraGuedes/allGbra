@@ -1,0 +1,16 @@
+{
+  "homeA": "Home",
+  "mathA": "Math",
+  "physA": "Phys",
+  "aboutA": "About",
+
+  "arithmeticSequenceH1": "Arithmetic Sequence",
+  "animationH3": "Animation",
+  "gereralTermH3": "General Term",
+  "commonDifferenceH3": "Common Difference",
+  "sumOfTermsH3": "Sum of Terms",
+  "numberOfTermsH3": "Number of Terms",
+
+  "contactEmailP": "Contact Email: gustavosilveiraguedes@gmail.com",
+  "contactNumberP": "Contact Number: +99 (99) 99999-9999"
+}
